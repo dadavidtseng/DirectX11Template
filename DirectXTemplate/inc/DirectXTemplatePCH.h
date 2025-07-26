@@ -1,4 +1,5 @@
 // System includes
+#pragma once
 #include <windows.h>
 
 // DirectX includes

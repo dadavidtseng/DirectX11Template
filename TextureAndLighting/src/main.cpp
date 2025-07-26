@@ -4,7 +4,7 @@
 
 #include <TextureAndLightingDemo.h>
 
-const char* g_WindowName = "Texture and Lighting Demo";
+const char* g_windowName = "Texture and Lighting Demo";
 int g_WindowWidth = 800;
 int g_WindowHeight = 600;
 bool g_VSync = false;
@@ -18,7 +18,7 @@ int WINAPI wWinMain( HINSTANCE hInstance, HINSTANCE prevInstance, LPWSTR cmdLine
     Application::Create(hInstance);
     Application& app = Application::Get();
 
-    Window& window = app.CreateRenderWindow( g_WindowName, g_WindowWidth, g_WindowHeight, g_VSync, g_Windowed );
+    Window& window = app.CreateRenderWindow( g_windowName, g_WindowWidth, g_WindowHeight, g_VSync, g_Windowed );
 
     TextureAndLightingDemo* pDemo = new TextureAndLightingDemo(window);
 
